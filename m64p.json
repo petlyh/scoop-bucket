@@ -1,0 +1,25 @@
+{
+    "version": "2021.9.10-778e4ec",
+    "description": "An easy to use N64 emulator",
+    "license": "GPL-3.0",
+    "homepage": "https://m64p.github.io/",
+    "extract_dir": "mupen64plus",
+    "url": "https://github.com/loganmc10/m64p/releases/download/v2021.9.10/m64p-win64-778e4ec.zip",
+    "hash": "0169679a7f1c7f02219e7a9de593b1da9909a20835ac03f005592c59585de8c2",
+    "shortcuts": [
+        [
+            "mupen64plus-gui.exe",
+            "m64p"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/loganmc10/m64p/releases/latest",
+        "regex": [
+            "(?<date>[0-9]{4}\\.[0-9]{1,2}\\.[0-9]{1,2})((.|\n)*)win64-(?<commit>[0-9a-z]{7})\\.zip"
+        ],
+        "replace": "${date}-${commit}"
+    },
+    "autoupdate": {
+        "url": "https://github.com/loganmc10/m64p/releases/download/v$matchDate/m64p-win64-$matchCommit.zip"
+    }
+}

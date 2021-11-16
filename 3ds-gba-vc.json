@@ -1,0 +1,14 @@
+{
+    "version": "1.6b",
+    "description": "Ultimate GBA VC Injector for 3DS",
+    "homepage": "https://gbatemp.net/threads/release-ultimate-gba-vc-injector-for-3ds.438057/",
+    "license": "Unknown",
+    "url": "https://archive.org/download/ultimate-gba-vc-injector-for-3-ds-1.6b/Ultimate GBA VC Injector for 3DS 1.6b.zip",
+    "hash": "5ACC10A113419D282A884AC834F150FE0CA70283C3420F8038186F0D9CF7CB28",
+    "shortcuts": [
+        [
+            "Ultimate GBA VC Injector for 3DS.exe",
+            "Ultimate GBA VC Injector for 3DS"
+        ]
+    ]
+}
