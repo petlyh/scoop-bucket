@@ -14,9 +14,7 @@
     ],
     "checkver": {
         "url": "https://github.com/loganmc10/m64p/releases/latest",
-        "regex": [
-            "(?<date>[0-9]{4}\\.[0-9]{1,2}\\.[0-9]{1,2})((.|\n)*)win64-(?<commit>[0-9a-z]{7})\\.zip"
-        ],
+        "regex": "(?<date>\\d{4}\\.\\d{1,2}\\.\\d{1,2})((.|\\n)*)win64-(?<commit>\\w{7})\\.zip",
         "replace": "${date}-${commit}"
     },
     "autoupdate": {
