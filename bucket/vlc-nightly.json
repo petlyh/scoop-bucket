@@ -1,0 +1,50 @@
+{
+    "version": "4.0.0-20211125-0422-16d6b231",
+    "description": "A free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.",
+    "homepage": "https://www.videolan.org/",
+    "license": "GPL-2.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://artifacts.videolan.org/vlc/nightly-win64/20211125-0422/vlc-4.0.0-dev-win64-16d6b231.7z",
+            "hash": "sha512:1ab91c04cebc8b9a29baccc9573bca8e097d755267d07bca65515e3ca3771b8fd394a4686d42c1d2253b9b6208e30441e008a7406fb9e61b4f464f4f0ed7fdfb"
+        }
+    },
+    "extract_dir": "vlc-4.0.0-dev",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\portable\") -and (Test-Path \"$env:APPDATA\\vlc\")) {",
+        "    info \"Copying old '$env:APPDATA\\vlc' to '$persist_dir\\portable'\"",
+        "    ensure \"$dir\\portable\\vlc\" | Out-Null",
+        "    Copy-Item \"$env:APPDATA\\vlc\\*\" \"$dir\\portable\" -Recurse -Force",
+        "    Move-Item \"$dir\\portable\\vlc-qt-interface.ini\" \"$dir\\portable\\vlc\"",
+        "}"
+    ],
+    "bin": [
+        [
+            "vlc.exe",
+            "vlc-nightly"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "vlc.exe",
+            "VLC media player (nightly)"
+        ]
+    ],
+    "persist": "portable",
+    "checkver": {
+        "url": "https://artifacts.videolan.org/vlc/nightly-win64/20211125-0422",
+        "regex": "win64/(?<date>\\d{8}-\\d{4})/((.|\\n)*)vlc-(?<ver>\\d*?\\.\\d*?\\.\\d*?)-dev-win64-(?<commit>\\w{8}).exe",
+        "replace": "${ver}-${date}-${commit}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://artifacts.videolan.org/vlc/nightly-win64/$matchDate/vlc-$matchVer-dev-win64-$matchCommit.7z"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA512SUM"
+        },
+        "extract_dir": "vlc-$matchVer-dev"
+    }
+}
