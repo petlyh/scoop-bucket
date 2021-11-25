@@ -1,4 +1,4 @@
-from urllib3 import PoolManager
+from urllib.request import urlopen
 import json
 import sys
 import re
@@ -8,10 +8,8 @@ MANIFEST = "bucket/vlc-nightly.json"
 
 
 def latest_url():
-    r = PoolManager().request("GET", BASE_URL)
-    pattern = re.compile(r"(\d{8}-\d{4})/")
-    date = pattern.findall(r.data.decode("utf-8"))[0]
-
+    page = urlopen(BASE_URL).read().decode("utf-8")
+    date = re.findall(r"(\d{8}-\d{4})/", page)[0]
     return BASE_URL + date
 
 
