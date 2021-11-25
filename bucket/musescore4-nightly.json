@@ -1,0 +1,43 @@
+{
+    "version": "202111250422-196c1e7",
+    "description": "Music notation editor with easy to use WYSIWYG interface",
+    "homepage": "https://musescore.org/",
+    "license": "GPL-3.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://ftp.osuosl.org/pub/musescore-nightlies/windows/4x/nightly/MuseScoreNightly-202111250422-master-196c1e7-x86_64.7z",
+            "hash": "a92fc35fbe03de7c49b6fba36b0c6904e4bceb6a34e1973749323ea8a85ff214"
+        }
+    },
+    "extract_dir": "MuseScoreNightly-202111250422-master-196c1e7-x86_64",
+    "bin": [
+        [
+            "bin\\MuseScore4.exe",
+            "MuseScore4-Nightly"
+        ],
+        [
+            "bin\\MuseScore4.exe",
+            "mscore4-nightly"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "bin\\MuseScore4.exe",
+            "MuseScore 4 (nightly)"
+        ]
+    ],
+    "checkver": {
+        "url": "https://ftp.osuosl.org/pub/musescore-nightlies/windows/4x/nightly/",
+        "regex": "MuseScoreNightly-(?<date>\\d{12})-master-(?<commit>\\w{7})-x86_64\\.7z",
+        "reverse": true,
+        "replace": "${date}-${commit}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://ftp.osuosl.org/pub/musescore-nightlies/windows/4x/nightly/MuseScoreNightly-$matchDate-master-$matchCommit-x86_64.7z"
+            }
+        },
+        "extract_dir": "MuseScoreNightly-$matchDate-master-$matchCommit-x86_64"
+    }
+}
