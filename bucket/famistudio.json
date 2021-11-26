@@ -1,10 +1,10 @@
 {
-    "version": "3.2.0",
+    "version": "3.2.1",
     "license": "MIT",
     "description": "NES Music Editor",
-    "url": "https://github.com/BleuBleu/FamiStudio/releases/download/3.2.0/FamiStudio320-WinPortableExe.zip",
+    "url": "https://github.com/BleuBleu/FamiStudio/releases/download/3.2.1/FamiStudio321-WinPortableExe.zip",
     "homepage": "https://famistudio.org/",
-    "hash": "232842a79413856a6d093e8b8c69dccb44205c4dcc970ba2a98359f95df0e082",
+    "hash": "f95433c47a56b7c80cca99e0d86adb1329534ddcca386cb7a9345173c9560ca8",
     "shortcuts": [
         [
             "FamiStudio.exe",
