@@ -21,13 +21,15 @@
     "bin": [
         [
             "vlc.exe",
-            "vlc-nightly"
+            "vlc-nightly",
+            "--no-qt-updates-notif"
         ]
     ],
     "shortcuts": [
         [
             "vlc.exe",
-            "VLC media player (nightly)"
+            "VLC media player (nightly)",
+            "--no-qt-updates-notif"
         ]
     ],
     "persist": "portable",
