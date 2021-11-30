@@ -10,7 +10,7 @@ MANIFEST = "bucket/vlc-nightly.json"
 def latest_url():
     page = urlopen(BASE_URL).read().decode("utf-8")
     date = re.findall(r"(\d{8}-\d{4})/", page)[0]
-    return BASE_URL + date
+    return BASE_URL + date + "/"
 
 
 def read_manifest():
