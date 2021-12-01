@@ -4,8 +4,12 @@
     "license": "GPL-3.0",
     "homepage": "https://m64p.github.io/",
     "extract_dir": "mupen64plus",
-    "url": "https://github.com/loganmc10/m64p/releases/download/v2021.11.22/m64p-win64-80738a0.zip",
-    "hash": "983cd2b67b45a5e94cf7fc0c96606c29f7fd6bc9b9b46c9e334d8750894ba251",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/loganmc10/m64p/releases/download/v2021.11.22/m64p-win64-80738a0.zip",
+            "hash": "983cd2b67b45a5e94cf7fc0c96606c29f7fd6bc9b9b46c9e334d8750894ba251"
+        }
+    },
     "shortcuts": [
         [
             "mupen64plus-gui.exe",
@@ -18,6 +22,10 @@
         "replace": "${date}-${commit}"
     },
     "autoupdate": {
-        "url": "https://github.com/loganmc10/m64p/releases/download/v$matchDate/m64p-win64-$matchCommit.zip"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/loganmc10/m64p/releases/download/v$matchDate/m64p-win64-$matchCommit.zip"
+            }
+        }
     }
 }
