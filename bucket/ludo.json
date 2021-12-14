@@ -1,13 +1,13 @@
 {
-    "version": "0.16.10",
+    "version": "0.16.11",
     "description": "A libretro frontend written in golang",
     "license": "GPL-3.0",
     "homepage": "https://ludo.libretro.com/",
     "architecture": {
         "64bit": {
-            "extract_dir": "Ludo-Windows-x86_64-0.16.10",
-            "url": "https://github.com/libretro/ludo/releases/download/v0.16.10/Ludo-Windows-x86_64-0.16.10.zip",
-            "hash": "558b0bf77cc6ffe36de350e7a646aa316418da8fc7f46158485a0ca20cad8146"
+            "extract_dir": "Ludo-Windows-x86_64-0.16.11",
+            "url": "https://github.com/libretro/ludo/releases/download/v0.16.11/Ludo-Windows-x86_64-0.16.11.zip",
+            "hash": "75e329944e8a329f6524e31efafbd4a6cbbca7ff4a486f48f2c10ad5bda8cf73"
         }
     },
     "shortcuts": [
