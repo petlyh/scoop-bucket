@@ -1,15 +1,15 @@
 {
-    "version": "202112180421-c3bd5be",
+    "version": "202112190423-c3bd5be",
     "description": "Music notation editor with easy to use WYSIWYG interface",
     "homepage": "https://musescore.org/",
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://ftp.osuosl.org/pub/musescore-nightlies/windows/4x/nightly/MuseScoreNightly-202112180421-master-c3bd5be-x86_64.7z",
-            "hash": "d95f1a2c46b6f6425879c2f37175c87a7f6b0aac90d10bda163fa8aab041bdf7"
+            "url": "https://ftp.osuosl.org/pub/musescore-nightlies/windows/4x/nightly/MuseScoreNightly-202112190423-master-c3bd5be-x86_64.7z",
+            "hash": "4aac306cf0a8bf89a85f8620b2d1cd1cf39282abc1385e99404dac9011c2e235"
         }
     },
-    "extract_dir": "MuseScoreNightly-202112180421-master-c3bd5be-x86_64",
+    "extract_dir": "MuseScoreNightly-202112190423-master-c3bd5be-x86_64",
     "bin": [
         [
             "bin\\MuseScore4.exe",
