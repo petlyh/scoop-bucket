@@ -1,5 +1,5 @@
 {
-    "version": "4.0.0-20211218-0425-793ffc25",
+    "version": "4.0.0-793ffc25",
     "description": "A free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.",
     "homepage": "https://www.videolan.org/",
     "license": "GPL-2.0-only",
@@ -35,13 +35,13 @@
     "persist": "portable",
     "checkver": {
         "url": "https://artifacts.videolan.org/vlc/nightly-win64/20211218-0425/",
-        "regex": "win64/(?<date>\\d{8}-\\d{4})/((.|\\n)*)vlc-(?<ver>\\d*?\\.\\d*?\\.\\d*?)-dev-win64-(?<commit>\\w{8}).exe",
-        "replace": "${ver}-${date}-${commit}"
+        "regex": "win64/(?<timestamp>\\d{8}-\\d{4})/((.|\\n)*)vlc-(?<ver>\\d*?\\.\\d*?\\.\\d*?)-dev-win64-(?<commit>\\w{8}).exe",
+        "replace": "${ver}-${commit}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://artifacts.videolan.org/vlc/nightly-win64/$matchDate/vlc-$matchVer-dev-win64-$matchCommit.7z"
+                "url": "https://artifacts.videolan.org/vlc/nightly-win64/$matchTimestamp/vlc-$matchVer-dev-win64-$matchCommit.7z"
             }
         },
         "hash": {
