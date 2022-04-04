@@ -1,13 +1,13 @@
 {
-    "version": "2022.03.31-33c43f5",
+    "version": "2022.04.03-67dfe5c",
     "description": "An easy to use N64 emulator",
     "license": "GPL-3.0",
     "homepage": "https://m64p.github.io/",
     "extract_dir": "mupen64plus",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/loganmc10/m64p/releases/download/v2022.03.31/m64p-win64-33c43f5.zip",
-            "hash": "12caadff244b6437071b467dbf677ce1dbe14e1d780317064becc3dbe6c5fb43"
+            "url": "https://github.com/loganmc10/m64p/releases/download/v2022.04.03/m64p-win64-67dfe5c.zip",
+            "hash": "ad57239f09e798b8afea7634760a4ae7b3f48bfd06f266411c18fe7fe66d0f24"
         }
     },
     "shortcuts": [
