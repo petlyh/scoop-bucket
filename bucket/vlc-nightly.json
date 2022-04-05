@@ -1,12 +1,12 @@
 {
-    "version": "4.0.0-20220404-0429-030c3045",
+    "version": "4.0.0-20220405-0421-572b5887",
     "description": "A free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.",
     "homepage": "https://www.videolan.org/",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://artifacts.videolan.org/vlc/nightly-win64/20220404-0429/vlc-4.0.0-dev-win64-030c3045.7z",
-            "hash": "sha512:d104b7672c9d57f10df2c1316f91e595a5d6dda090c19f97e88fefd0b41142ddba7c716450e23aeb5a0683e521adba723f013cc552f5dcc2ba7260cb9aa1ffe1"
+            "url": "https://artifacts.videolan.org/vlc/nightly-win64/20220405-0421/vlc-4.0.0-dev-win64-572b5887.7z",
+            "hash": "sha512:d7fd7ec7572feb1ba25ede3991b89f3dc41c2ad71c689a2db31e9800d49c58b6e42d689f11ac1a01b52211932455c71e057bafac5bde48256dcd745313894770"
         }
     },
     "extract_dir": "vlc-4.0.0-dev",
@@ -34,7 +34,7 @@
     ],
     "persist": "portable",
     "checkver": {
-        "url": "https://artifacts.videolan.org/vlc/nightly-win64/20220404-0429/",
+        "url": "https://artifacts.videolan.org/vlc/nightly-win64/20220405-0421/",
         "regex": "win64/(?<timestamp>\\d{8}-\\d{4})/((.|\\n)*)vlc-(?<ver>\\d*?\\.\\d*?\\.\\d*?)-dev-win64-(?<commit>\\w{8}).exe",
         "replace": "${ver}-${timestamp}-${commit}"
     },
