@@ -10,12 +10,6 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@master
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: "3.10"
-      - name: Update checkver URL for VLC nightly
-        run: python bin/vlc-nightly.py
       - name: Run Excavator
         uses: Ash258/Scoop-GithubActions@stable-win
         env:

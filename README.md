@@ -1,6 +1,5 @@
 |Name|Auto-update|Manifest|
 |-|-|-|
-|VLC media player (Nightly)      |Yes|[vlc-nightly.json](bucket/vlc-nightly.json)|
 |MuseScore 4 (Nightly)           |Yes|[musescore4-nightly.json](bucket/musescore4-nightly.json)|
 |Ludo                            |Yes|[ludo.json](bucket/ludo.json)|
 |m64p                            |Yes|[m64p.json](bucket/m64p.json)|
