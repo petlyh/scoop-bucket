@@ -5,7 +5,7 @@
     "hash": "0f39742598eaf96539acd9a7f59592e02fe1f41f8b39fda6b0887b5b07c3efa7",
     "url": "https://github.com/Xpl0itU/WiiUDownloader/releases/download/v1.21/WiiUDownloader-Windows.zip",
     "persist": "settings.json",
-    "shortcut": [
+    "shortcuts": [
         [
             "WiiUDownloader.exe",
             "WiiUDownloader"
