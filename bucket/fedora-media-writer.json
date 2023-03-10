@@ -1,0 +1,17 @@
+{
+    "version": "4.2.2",
+    "license": "GPL-2.0",
+    "url": "https://github.com/FedoraQt/MediaWriter/releases/download/4.2.2/FedoraMediaWriter-win64-4.2.2.exe#/dl.7z",
+    "hash": "c4c586348c09237bf47e29a9c6aa1810d73ff6b4b76b207139fbf031f1e81c21",
+    "homepage": "https://github.com/FedoraQt/MediaWriter",
+    "shortcuts": [
+        [
+            "mediawriter.exe",
+            "Fedora Media Writer"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/FedoraQt/MediaWriter/releases/download/$version/FedoraMediaWriter-win64-$version.exe#/dl.7z"
+    }
+}
