@@ -1,9 +1,9 @@
 {
     "license": "GPL-3.0",
-    "version": "1.22",
+    "version": "1.23",
     "homepage": "https://gbatemp.net/threads/relase-wiiudownloader-multiplatform-alternative-to-wii-u-usb-helper.621432/",
-    "hash": "d5d5b5f7fb11b834b3855c380a15ca6e43dfa043166432dc2c50473a8de8d546",
-    "url": "https://github.com/Xpl0itU/WiiUDownloader/releases/download/v1.22/WiiUDownloader-Windows.zip",
+    "hash": "e8b73a707787b3a226c80290e66cdf6d231654510c70154271c5800a47d31d3c",
+    "url": "https://github.com/Xpl0itU/WiiUDownloader/releases/download/v1.23/WiiUDownloader-Windows.zip",
     "persist": "settings.json",
     "shortcuts": [
         [
