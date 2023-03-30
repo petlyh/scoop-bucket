@@ -25,7 +25,8 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/NiceneNerd/ukmm"
+        "url": "https://github.com/NiceneNerd/ukmm/releases",
+        "regex": "Beta (?<version>[\\d\\w.]+)"
     },
     "autoupdate": {
         "url": "https://github.com/NiceneNerd/ukmm/releases/download/v$version/ukmm-v$version-windows.zip"
