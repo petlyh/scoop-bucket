@@ -12,6 +12,6 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/FedoraQt/MediaWriter/releases/download/$version/FedoraMediaWriter-win64-$version.exe#/dl.7z"
+        "url": "https://github.com/FedoraQt/MediaWriter/releases/download/$version/FedoraMediaWriter-win32-$version.exe#/dl.7z"
     }
 }
