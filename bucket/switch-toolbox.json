@@ -1,4 +1,4 @@
-﻿{
+{
     "version": "1.0.197",
     "license": "GPL-3.0",
     "url": "https://github.com/KillzXGaming/Switch-Toolbox/releases/download/EXPERIMENTAL_LATEST/Toolbox-Latest.zip",
@@ -9,5 +9,12 @@
             "Toolbox.exe",
             "Switch Toolbox"
         ]
-    ]
+    ],
+    "checkver": {
+        "url": "https://github.com/KillzXGaming/Switch-Toolbox/releases",
+        "regex": "Latest Release-v(?<version>[\\d\\w.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/KillzXGaming/Switch-Toolbox/releases/download/Latest/Toolbox-Latest.zip"
+    }
 }
