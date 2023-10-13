@@ -1,5 +1,5 @@
 {
-    "homepage": "https://doki.space/",
+    "homepage": "https://github.com/DokiDokiModManager/Mod-Manager",
     "version": "4.99.0",
     "license": "MIT",
     "description": "A mod manager for Doki Doki Literature Club!",
@@ -15,11 +15,5 @@
             "Doki Doki Mod Manager.exe",
             "Doki Doki Mod Manager"
         ]
-    ],
-    "checkver": {
-        "github": "https://github.com/DokiDokiModManager/Mod-Manager"
-    },
-    "autoupdate": {
-        "url": "https://github.com/DokiDokiModManager/Mod-Manager/releases/download/v$version/doki-doki-mod-manager-$version-x64.nsis.7z"
-    }
+    ]
 }
