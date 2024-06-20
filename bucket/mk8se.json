@@ -1,5 +1,5 @@
 {
-    "license": "AGPL-3.0",
+    "license": "AGPL-3.0-only",
     "homepage": "https://github.com/petlyh/MK8SE",
     "description": "Save editor for Mario Kart 8 (Wii U)",
     "version": "1.1.0",
